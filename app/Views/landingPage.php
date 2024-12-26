@@ -7,18 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_url(relativePath: 'css/landingPage.css'); ?>">
-    <title>Frontend Mentor | Bookmark Landing Page</title>
-    <script defer src="./js/script.js"></script>
+    <title>MBot | Home</title>
+    <script defer src="<?= base_url(relativePath: 'js/landingPage.js'); ?>"></script>
 </head>
 <body>
     <header class="header animate__animated animate__fadeInDown">
         <div class="header__content-wrapper">
-            <a href="#" class="header__logo">
-                <svg width="148" height="25" viewbox="0 0 148 25" xmlns="http://www.w3.org/2000/svg"><title>BookMark Logo</title><g fill="none" fill-rule="evenodd"><path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#242A45" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path class="bookmark-icon" d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g></g></svg>
+            <a href="#" class="header__logo" style="text-decoration: none; color:black; font-size: 50px;">
+                <span>MBot</span><g fill="none" fill-rule="evenodd">
             </a>
 
             <button class="menu-btn header__menu-btn" aria-label="toggle menu button" aria-pressed="true">
@@ -29,10 +31,10 @@
 
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="header__nav__list__item"><a class="header__nav__link" href="#">Features</a></li>
-                    <li class="header__nav__list__item"><a class="header__nav__link" href="#">Pricing</a></li>
-                    <li class="header__nav__list__item"><a class="header__nav__link" href="#">Contact</a></li>
-                    <li class="header__nav__list__item"><a class="header__nav__link" href="#"><span class="header__nav__link--login">Login</a></span></li>
+                    <li class="header__nav__list__item"><a class="header__nav__link" href="/">Home</a></li>
+                    <li class="header__nav__list__item"><a class="header__nav__link" href="javascript:void()" onclick="scrollToSection(event, 'features__content-wrapper')">About</a></li>
+                    <li class="header__nav__list__item"><a class="header__nav__link" href="javascript:void()" onclick="scrollToSection(event, 'cta')">Contact</a></li>
+                    <li class="header__nav__list__item"><a class="header__nav__link" href="/login"><span class="header__nav__link--login">Login</a></span></li>
                 </ul>
                 <div class="header__nav__social-icons">
                     <a href="#"><img src="./img/icon-facebook.svg" alt="facebook icon"></a>
@@ -45,71 +47,42 @@
     <section class="hero">
         <div class="hero__content-wrapper">
             <div class="hero__img-wrapper">
-                <img class="hero__img animate__animated animate__bounceInRight" src="./img/illustration-hero.svg" alt="tablet">
+                <img class="hero__img animate__animated animate__bounceInRight" src="https://img.freepik.com/free-vector/chatbot-healthcare-abstract-concept-illustration_335657-1822.jpg?t=st=1735037860~exp=1735041460~hmac=03920420268ce45cee6826bdbc4224e3b4a11a48a0367f2a10deb2ddde3fbe60&w=740" alt="tablet">
             </div>
             
             <div class="hero__text-wrapper animate__animated animate__fadeInLeft">
-                <h1 class="hero__heading heading heading--primary">A Simple Bookmark Manager</h1>
-                <p class="hero__description paragraph">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <h1 class="hero__heading heading heading--primary">A Simple Medical AI Assignment</h1>
+                <p class="hero__description paragraph">A simple medical AI assignment focuses on designing or understanding basic AI models for healthcare applications. It typically involves tasks like symptom analysis, disease prediction, or patient data management using machine learning or rule-based systems. The assignment may include building models for diagnosing common conditions or automating routine medical processes. Such tasks help in understanding the practical application of AI in the healthcare industry.</p>
                 <div class="hero__btn-wrapper">
-                    <button class="btn btn--blue animate__animated animate__tada animate__delay-1s">Get it on Chrome</button>
-                    <button class="btn btn--grey animate__animated animate__tada animate__delay-2s">Get it on Firefox</button>
+                    <button class="btn btn--blue animate__animated animate__tada animate__delay-1s">Get Started</button>
+                    <a href="javascript:void()" onclick="scrollToSection(event, 'features__content-wrapper')" style="text-decoration: none; color: black;" class="btn btn--grey animate__animated animate__tada animate__delay-2s">Read More</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="features" aria-live="polite">
-        <div class="features__content-wrapper">
+        <div class="features__content-wrapper" id="features__content-wrapper">
             <div class="features__header">
                 <h2 class="features__heading heading heading--secondary">Features</h2>
-                <p class="features__description paragraph">    Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                <p class="features__description paragraph">A simple medical AI assignment includes features like symptom analysis, disease prediction, and task automation. It focuses on improving healthcare efficiency while ensuring data privacy and compliance.</p>
             </div>
 
             <ul class="tabs">
-                <li class="tabs__tab tabs__tab--active" id="tab-1" tabindex="0">Simple Bookmarking</li>
-                <li class="tabs__tab" id="tab-2" tabindex="0">Speedy Searching</li>
-                <li class="tabs__tab" id="tab-3" tabindex="0">Easy Sharing</li>
+                <li class="tabs__tab tabs__tab--active" id="tab-1" tabindex="0">Simple Prompts</li>
+                <li class="tabs__tab" id="tab-2" tabindex="0">Speedy Analysis</li>
+                <li class="tabs__tab" id="tab-3" tabindex="0">Chat History</li>
             </ul>
 
             <div class="feature">
                 <div class="feature__img-wrapper">
-                    <img class="feature__img" src="./img/illustration-features-tab-1.svg" alt="dashboard">
+                    <img class="feature__img" style="height: 10%; width: 10%;" src="https://www.svgrepo.com/show/509864/command-prompt.svg" alt="dashboard">
                 </div>
                 <div class="feature__text-wrapper">
-                    <h3 class="feature__heading heading heading--secondary">Bookmark in one click</h3>
-                    <p class="feature__description paragraph">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                    <button class="feature__btn btn btn--blue">More Info</button>
+                    <h3 class="feature__heading heading heading--secondary">Just Write Simple Prompts</h3>
+                    <p class="feature__description paragraph">Write only the symptoms about the problem and you will get very well  home remedy or deatils or doctor to consult with.</p>
+                    <!-- <button class="feature__btn btn btn--blue">More Info</button> -->
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="downloads">
-        <div class="downloads__content-wrapper">
-            <h2 class="downloads__heading heading heading--secondary">Download the extension</h2>
-            <p class="downloads__description paragraph"> We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
-            <div class="downloads__card-wrapper">
-                <article class="download-card">
-                    <img class="download-card__img" src="./img/logo-chrome.svg" alt="chrome logo">
-                    <h4 class="download-card__heading">Add to Chrome</h4>
-                    <p class="download-card__subheading">Minimum version 62</p>
-                    <button class="download-card__btn btn btn--blue">Add & Install Extension</button>
-                </article>
-
-                <article class="download-card download-card--2">
-                    <img class="download-card__img" src="./img/logo-firefox.svg" alt="chrome logo">
-                    <h4 class="download-card__heading">Add to Firefox</h4>
-                    <p class="download-card__subheading">Minimum version 55</p>
-                    <button class="download-card__btn btn btn--blue">Add & Install Extension</button>
-                </article>
-
-                <article class="download-card">
-                    <img class="download-card__img" src="./img/logo-opera.svg" alt="chrome logo">
-                    <h4 class="download-card__heading">Add to Opera</h4>
-                    <p class="download-card__subheading">Minimum version 46</p>
-                    <button class="download-card__btn btn btn--blue">Add & Install Extension</button>
-                </article>
             </div>
         </div>
     </section>
@@ -120,77 +93,233 @@
             <p class="faqs__description paragraph">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
             <div class="faqs__faqs-wrapper">
                 <details class="faq">
-                    <summary class="faq__question">What is Bookmark?
+                    <summary class="faq__question">What is this website about?
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewbox="0 0 18 12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                     </summary>
-                    <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+                    <p class="faq__answer">This website offers AI-powered tools for healthcare, including symptom analysis and disease prediction.</p>
                 </details>
 
                 <details class="faq">
-                    <summary class="faq__question">How can I request a new browser?
+                    <summary class="faq__question">How does the symptom analysis work?
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewbox="0 0 18 12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                     </summary>
-                    <p class="faq__answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    <p class="faq__answer">You input your symptoms, and the AI predicts possible medical conditions to help guide your next steps.</p>
                 </details>
 
                 <details class="faq">
-                    <summary class="faq__question">Is there a mobile app?
+                    <summary class="faq__question">Is my personal data safe?
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewbox="0 0 18 12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                     </summary>
-                    <p class="faq__answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+                    <p class="faq__answer">Yes, we prioritize data privacy and comply with healthcare standards to protect your information.</p>
                 </details>
 
                 <details class="faq">
-                    <summary class="faq__question">What about other Chromium browsers?
+                    <summary class="faq__question"> Do I need an account to use the tools?
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewbox="0 0 18 12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
                     </summary>
-                    <p class="faq__answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+                    <p class="faq__answer">No, you can use the basic features without creating an account.</p>
                 </details>
             </div>
-            <button class="faqs__btn btn btn--blue">More Info</button>
+            <!-- <button class="faqs__btn btn btn--blue">More Info</button> -->
         </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" id="cta">
         <div class="cta__content-wrapper">
-            <p class="cta__subheading">35,000+ already joined</p>
+            <p class="cta__subheading">20+ already joined</p>
             <h2 class="cta__heading" id="form-heading">Stay up-to-date with what we’re doing</h2>
-            <form class="cta__form">
-                <input class="cta__input" type="text" placeholder="Enter your email address" aria-labelledby="form-heading" required>
-                <button class="cta__btn btn btn--red">Contact Us</button>
-            </form>
+            <button id="openModalBtn" style="padding: 5px 10px; font-size: 15px; background: linear-gradient(to right, #ff8615, #ff6a00, #e55b00); color: white; border: none; width: auto; height: auto; cursor: pointer; border-radius: 20px; font-weight: 500; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.background='linear-gradient(to bottom right, #ff8615, #ff6a00, #e55b00)'" onmouseout="this.style.background='linear-gradient(to right, #ff8615, #ff6a00, #e55b00)'" onfocus="this.style.boxShadow='0 0 0 4px rgba(255, 134, 21, 0.4)'" onblur="this.style.boxShadow='none'">Contact Us</button>
         </div>
     </section>
+    
 
-    <footer class="footer">
-        <div class="footer__content-wrapper">
-            <nav class="footer__nav">
-                <a href="#" class="footer__logo">
-                    <svg width="148" height="25" viewbox="0 0 148 25" xmlns="http://www.w3.org/2000/svg"><title>BookMark Logo</title><g fill="none" fill-rule="evenodd"><path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#fff" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path class="bookmark-icon" d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g></g></svg>
-                </a>
-                <ul class="footer__nav__list">
-                    <li><a class="footer__nav__link" href="#">Features</a></li>
-                    <li><a class="footer__nav__link" href="#">Pricing</a></li>
-                    <li><a class="footer__nav__link" href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="footer__social-links">
-                <a href="#" class="footer__social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><title>Facebook Logo</title><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-                </a>
+    <!-- Modal -->
+    <div id="myUniqueModal" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; animation: fadeIn 0.5s;">
+    <div style="background-color: white; padding: 20px; border-radius: 8px; width: 300px; text-align: center; position: relative; animation: slideIn 0.5s;">
+        <!-- Close (Cross) Button -->
+        <button id="closeBtn" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; color: #aaa; cursor: pointer; font-weight: bold;">&times;</button>
 
-                <a href="#" class="footer__social-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewbox="0 0 24 20"><title>Twitter Logo</title><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
-                </a>
-            </div>
+        <h2 style="font-size: 20px; color: #333;font-size:20px; margin-bottom: 5vh;">Send us an Email</h2>
+        <div style="text-align:left;">
+            <input type="text" class="text" id="text" placeholder="Enter Your Name" style="background-color: #f5f5f5;border-radius: 20px;box-shadow: 1px 1px 4px #cacaca;padding: 5px 5px 5px 10px;width: 100%;color: #5f5f5f;" required>
+            <p id="nameError" style="color: red; font-size:12px;"></p>
+            <br><br>
+            <input type="email" class="email" id="email" placeholder="Enter email" style="background-color: #f5f5f5;border-radius: 20px;box-shadow: 1px 1px 4px #cacaca;padding: 5px 5px 5px 10px;width: 100%;color: #5f5f5f;" required>
+            <p id="emailError" style="color: red; font-size:12px;"></p>
+            <br><br>
+            <textarea class="message" id="message" placeholder="Enter Your Message" style="background-color: #f5f5f5;border-radius: 20px;box-shadow: 1px 1px 4px #cacaca;padding: 5px 5px 5px 10px;width: 100%;color: #5f5f5f;" required></textarea>
+            <p id="messageError" style="color: red; font-size:12px;"></p>
+            <br><br>
         </div>
-    </footer>
-
-    <div class="attribution">
-        <img  class="attribution__img" src="./img/attribution-avatar.png" alt="creator avatar">
-        <div class="attribution__message">
-            <p class="attribution__text">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br> Coded by <a href="https://github.com/ApplePieGiraffe" target="_blank">ApplePieGiraffe</a>.</p>
+        <div style="display: flex; justify-content: space-between;">
+            <a href="javascript:void(0)" type="button" onclick="submitFeedback(this)" style="background: linear-gradient(to right, #48bb78, #38a169, #2f855a); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px; font-weight: 500; text-align: center; border: none; transition: all 0.3s ease;" onmouseover="this.style.background='linear-gradient(to bottom right, #48bb78, #38a169, #2f855a)'" onmouseout="this.style.background='linear-gradient(to right, #48bb78, #38a169, #2f855a)'" onfocus="this.style.boxShadow='0 0 0 4px rgba(72, 187, 120, 0.4)'" onblur="this.style.boxShadow='none'">Submit</a>
+            <a href="javascript:void(0)" id="closeModal" type="button" style="background: linear-gradient(to right, #f56565, #e53e3e, #c53030); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px; font-weight: 500; text-align: center; border: none; transition: all 0.3s ease;" onmouseover="this.style.background='linear-gradient(to bottom right, #f56565, #e53e3e, #c53030)'" onmouseout="this.style.background='linear-gradient(to right, #f56565, #e53e3e, #c53030)'" onfocus="this.style.boxShadow='0 0 0 4px rgba(234, 83, 83, 0.4)'" onblur="this.style.boxShadow='none'">Close</a>
         </div>
     </div>
+    </div>
+    <button onclick="showToast()" style="display: none;">Show Toast</button>
+
+    
+    <script>
+        let isNameValid = false;
+        let isEmailValid = false;
+        let isMessageValid = false;
+        const modal = document.getElementById('myUniqueModal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModal = document.getElementById('closeModal');
+        const closeBtn = document.getElementById('closeBtn');
+        
+        openModalBtn.onclick = function() {
+            modal.style.display = 'flex';
+        };
+
+        
+        function closeModalFunction() {
+            modal.style.display = 'none';
+        }
+
+        closeModal.onclick = closeModalFunction;
+        closeBtn.onclick = closeModalFunction;
+
+        
+    document.addEventListener('DOMContentLoaded', () => {
+        const name = document.getElementById('text')
+        const email = document.getElementById('email')
+        const message = document.getElementById('message')
+
+        const nameError = document.getElementById('nameError')
+        const emailError = document.getElementById('emailError')
+        const messageError = document.getElementById('messageError')
+
+        name.addEventListener('input', () => handleInputChange(name, nameError, validName))
+        email.addEventListener('input', () => handleInputChange(email, emailError, validateEmail))
+        message.addEventListener('input', () => handleInputChange(message, messageError, validMessage))
+
+        function handleInputChange(inputElement, errorElement, validFunction){
+            const text = inputElement.value;
+            console.log(text)
+            const validRes = validFunction(text)
+        
+
+            if(validRes.isValid){
+                showError(errorElement, '')
+                isReady = true
+            }else{
+                showError(errorElement, validRes.message)
+                isReady = false
+            }
+            
+            if (inputElement === name) {
+                isNameValid = validRes.isValid;
+            } else if (inputElement === email) {
+                isEmailValid = validRes.isValid;
+            } else if (inputElement === message) {
+                isMessageValid = validRes.isValid;
+            }
+        }
+
+        function validName(name) {
+            const regex = /^[a-zA-Z\s]*$/;
+            if (!regex.test(name)) {
+            return {
+                isValid: false,
+                message: 'Name can only contain letters and spaces.'
+            };
+            }
+            return { isValid: true };
+        }
+
+        function validateEmail(email) {
+            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!regex.test(email)) {
+            return {
+                isValid: false,
+                message: 'Please enter a valid email address.'
+            };
+            }
+            return { isValid: true };
+        }
+
+        function validMessage(message){
+            if(message.length < 10){
+                return {
+                    isValid: false,
+                    message: 'Message must be at least 10 characters long.'
+                }
+            }
+            else{
+                return { isValid: true };
+            }
+        }
+
+        function showError(errorElement, message){
+            errorElement.textContent = message
+        }
+
+    })
+
+    async function submitFeedback(button){
+
+        if(!isEmailValid || !isNameValid || !isMessageValid){
+            showToast(false, 'Please check your input again')
+            return;
+        }
+
+        const originalButton = `
+            <a href="javascript:void(0)" type="button" onclick="submitFeedback(this)" style="background: linear-gradient(to right, #48bb78, #38a169, #2f855a); color: white; font-size: 14px; padding: 10px 20px; border-radius: 8px; font-weight: 500; text-align: center; border: none; transition: all 0.3s ease;" onmouseover="this.style.background='linear-gradient(to bottom right, #48bb78, #38a169, #2f855a)'" onmouseout="this.style.background='linear-gradient(to right, #48bb78, #38a169, #2f855a)'" onfocus="this.style.boxShadow='0 0 0 4px rgba(72, 187, 120, 0.4)'" onblur="this.style.boxShadow='none'">Submit</a>
+        `;
+
+        button.outerHTML = `
+            <button disabled="" type="button" style="color: white; background-color: #1d4ed8; border: none; border-radius: 0.375rem; font-size: 15px; font-weight: 500; padding: 0.625rem 1.25rem; text-align: center; margin-right: 0.5rem; display: inline-flex; align-items: center; outline: none; cursor: not-allowed; transition: background-color 0.2s ease;">
+            <svg aria-hidden="true" role="status" style="display: inline; margin-right: 0.75rem; width: 3rem; height: 3rem; color: white; animation: spin 1s linear infinite;" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="#E5E7EB"></path>
+                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentColor"></path>
+            </svg>
+            Loading...
+            </button>
+        `;
+
+        const name = document.getElementById("text").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+
+        setTimeout(() => {
+
+            const spinnerButton = document.querySelector("button[disabled]");
+            if (spinnerButton) spinnerButton.outerHTML = originalButton;
+        }, 2000)
+
+
+        console.log(name,email,message)
+
+        const response = await fetch('/api/submit-feedback',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                'name' : name,
+                'email' : email,
+                'message' : message
+            })
+        })
+
+        const data = await response.json()
+
+        if(data.status){
+            showToast(data.status, data.message)
+            closeBtn.click()
+        }
+        else{
+            showToast(data.status, data.message)
+            closeBtn.click()
+        }
+
+    }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
