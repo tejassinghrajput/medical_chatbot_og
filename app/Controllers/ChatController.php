@@ -15,7 +15,7 @@ class ChatController extends BaseController{
             return $this->response->setStatusCode(400)->setJSON(['error' => 'Message is required']);
         }
 
-        $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBFGJZlbBOTavXTRN6DF3U_x8egA2L4R_c";
+        $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=[api-key]";
 
         $data = [
             'contents' => [
