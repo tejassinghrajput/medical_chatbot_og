@@ -1,60 +1,122 @@
-# CodeIgniter 4 Framework
+<h1 align="center">🩺 Medical Chatbot</h1>
 
-## What is CodeIgniter?
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
+  <img src="https://img.shields.io/badge/CodeIgniter-EE4323?style=for-the-badge&logo=codeigniter&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+</p>
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+<p align="center">
+  🤖 A smart chatbot providing <b>medical guidance</b> with <b>AI-driven responses</b>! 
+  <br>
+  📋 Ask about diseases, symptoms, medications & more!
+</p>
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+---
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## 🚀 Features
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+✅ **Disease Information** – Get details on various diseases.  
+✅ **Symptom Checker** – Find diseases based on symptoms.  
+✅ **Medication Guidance** – Learn about common medications.  
+✅ **Chat History** – Revisit your previous queries.  
+✅ **Smart Queries** – AI-powered responses for in-depth queries.  
 
-## Important Change with index.php
+---
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## 🎯 Future Enhancements
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+🔒 **Secure Authentication** – User login system for personalized experience.  
+🔐 **Data Privacy** – Secure storage of medical queries.  
+📂 **Upload Medical Reports** – Analyze reports & get insights.  
 
-**Please** read the user guide for a better explanation of how CI4 works!
+---
 
-## Repository Management
+## 🛠 Installation & Setup
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/tejassinghrajput/medical_chatbot_og.git
+cd medical_chatbot_og
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+2️⃣ Install Dependencies
 
-## Contributing
+composer install
 
-We welcome contributions from the community.
+3️⃣ Configure Environment
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+Rename .env.example to .env & update database credentials.
 
-## Server Requirements
+4️⃣ Run the Application
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+php spark serve
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+💡 Access the chatbot at http://localhost:8080.
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+---
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+🏗️ Tech Stack
+
+
+---
+
+🤝 Contributing
+
+We welcome contributions! Follow these steps:
+
+1. Fork the repo 🚀
+
+
+2. Clone your fork
+
+git clone https://github.com/YOUR-USERNAME/medical_chatbot_og.git
+
+
+3. Create a feature branch
+
+git checkout -b feature/YourFeatureName
+
+
+4. Make changes & commit
+
+git commit -m "Added Feature: YourFeatureName"
+
+
+5. Push to GitHub
+
+git push origin feature/YourFeatureName
+
+
+6. Create a Pull Request ✔
+
+
+
+
+---
+
+📜 License
+
+📝 This project is MIT Licensed. See LICENSE for details.
+
+
+---
+
+📬 Contact
+
+For any inquiries or suggestions, reach out at:
+📧 singhtejas0001@gmail.com
+
+<p align="center">
+  ⭐ If you like this project, don't forget to star the repo!
+</p>
+```Why This README Looks Impressive on GitHub:
+
+✔ Aligned Sections – Organized content with proper spacing.
+✔ Badges – Eye-catching tech stack badges.
+✔ Icons & Emojis – Enhances readability.
+✔ Tables – Structured tech stack information.
+✔ Horizontal Lines – Improves clarity.
+✔ **Call to
+
