@@ -111,12 +111,3 @@ For any inquiries or suggestions, reach out at:
 <p align="center">
   ⭐ If you like this project, don't forget to star the repo!
 </p>
-```Why This README Looks Impressive on GitHub:
-
-✔ Aligned Sections – Organized content with proper spacing.
-✔ Badges – Eye-catching tech stack badges.
-✔ Icons & Emojis – Enhances readability.
-✔ Tables – Structured tech stack information.
-✔ Horizontal Lines – Improves clarity.
-✔ **Call to
-
